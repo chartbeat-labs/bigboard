@@ -1,0 +1,15 @@
+<div class="cb-drop-down" ng-class="{open: showList}" ng-mousedown="dropdownToggle()">
+  <span class="selection">{{model.selection.label}}</span>
+  <div class="dropdown">
+    <svg width="16px" height="16px">
+      <path d="M4.294,6H12l-3.853,4.393L4.294,6z"/>
+    </svg>
+  </div>
+</div>
+<div class="menu" ng-show="showList">
+  <ul>
+    <li ng-repeat="item in model.options" ng-click="select(item)">
+      <span class="label">{{item.label}}</span>
+      </li>
+  </ul>
+</div>

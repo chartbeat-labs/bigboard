@@ -1,0 +1,202 @@
+/**
+ * Box Sizing Border Box
+ * http://paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+.border-box() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Drop shadows */
+.box-shadow (...) {
+  -moz-box-shadow: @arguments;  /* FF 3.5+ */
+  -webkit-box-shadow: @arguments;  /* Safari 3+, Chrome */
+  box-shadow: @arguments;  /* Opera 10.5, IE 9, Chrome 10+ */
+}
+
+/* Rounded Corners */
+.border-radius (@radius: 5px) {
+  -moz-border-radius: @radius;  /* FF 1+ */
+  -webkit-border-radius: @radius;  /* Safari 3-4, iOS 1+, Android 1.5+ */
+  border-radius: @radius;  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+}
+
+/* Transitions */
+.transition (@transition) {
+  -moz-transition: @transition;  /* FF 4+ */
+  -webkit-transition: @transition;  /* Safari 3.2+, Chrome */
+  -o-transition: @transition;
+  -ms-transition: @transition;
+  transition: @transition;
+}
+
+.transition-delay (@delay: 1s) {
+  -moz-transition-delay: @delay;
+  -webkit-transition-delay: @delay;
+  -ms-transition-delay: @delay;
+  transition-delay: @delay;
+}
+
+/* Transforms */
+.transform (@transform) {
+  -moz-transform: @transform;
+  -webkit-transform: @transform;
+  -ms-transform: @transform;
+  transform: @transform;
+}
+
+.transform-origin (@transform: 50% 50%) {
+  -moz-transform-origin: @transform;
+  -webkit-transform-origin: @transform;
+  -ms-transform-origin: @transform;
+  transform-origin: @transform;
+}
+
+/* Flex box layouts -- first, for the flexible container */
+.display-flex () {
+  /* Old "box" syntax first so it gets overridden by "flex" for browsers that understand it */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+}
+
+.display-inline-flex () {
+  /* Old "box" syntax first so it gets overridden by "flex" for browsers that understand it */
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: -ms-inline-flex;
+  display: inline-flex;
+}
+
+/* Overload the .flex-flow mixin to change row to horizontal etc for old syntax */
+.flex-flow (@direction: row, @wrap: nowrap) when (@direction = row) {
+  -webkit-box-orient: horizontal;
+}
+.flex-flow (@direction: row, @wrap: nowrap) when (@direction = column) {
+  -webkit-box-orient: vertical;
+}
+.flex-flow (@direction: row, @wrap: nowrap) when (@wrap = wrap) {
+  -webkit-box-lines: multiple;
+}
+.flex-flow (@direction: row, @wrap: nowrap) when (@wrap = nowrap) {
+  -webkit-box-lines: single;
+}
+
+.flex-flow (@direction: row, @wrap: wrap) {
+  -webkit-flex-flow: @direction @wrap;
+  -moz-flex-flow: @direction @wrap;
+  -ms-flex-flow: @direction @wrap;
+  -ms-flex-direction: @direction;
+  -ms-flex-wrap: @wrap;
+  flex-flow: @direction @wrap;
+}
+
+/* Flex box layouts -- second, for the contained boxes. */
+/* If you set a basis, you should also set the width or height property on the
+   element (correspondng to row/column orientation) to match, as the old box-flex
+   syntax doesn't support a basis param */
+.flex (@grow: 0, @shrink: 0, @basis: auto) {
+  /* I _think_ the old box-flex syntax corresponds to the grow property of new syntax */
+  -webkit-box-flex: @grow;
+  -webkit-flex: @grow @shrink @basis;
+  -moz-flex: @grow @shrink @basis;
+  -ms-flex: @grow @shrink @basis;
+  flex-grow: @grow;
+  flex-shrink: @shrink;
+  flex-basis: @basis;
+  flex: @grow @shrink @basis;
+}
+.flex (@grow: 0, @shrink: 0, @basis: auto) when not (@basis = auto) {
+  width: @basis;
+}
+
+.flex-auto () {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  -moz-flex: auto;
+  /* For IE10, if you just set auto it will not shrink to fit space and text
+     won't even wrap. The element will grow to a width to fit its contents.
+     Setting "1 1 auto" seems to force it to shrink appropriately */
+  -ms-flex: 1 1 auto;
+  flex: auto;
+}
+
+/* Animation */
+.animation (@anim: all 1s ease) {
+  -moz-animation: @anim;
+  -ms-animation: @anim;
+  -o-animation: @anim;
+  -webkit-animation: @anim;
+  animation: @anim;
+}
+
+/* Animation Delay */
+.animation-delay (@time: 1s) {
+  -moz-animation-delay: @time;
+  -ms-animation-delay: @time;
+  -o-animation-delay: @time;
+  -webkit-animation-delay: @time;
+  animation-delay: @time;
+}
+
+/* Animation Fill Mode */
+.animation-fill-mode (@type: none) {
+  -moz-animation-fill-mode: @type;
+  -ms-animation-fill-mode: @type;
+  -o-animation-fill-mode: @type;
+  -webkit-animation-fill-mode: @type;
+  animation-fill-mode: @type;
+}
+
+/* Animation Direction */
+.animation-direction (@type: none) {
+  -moz-animation-direction: @type;
+  -ms-animation-direction: @type;
+  -o-animation-direction: @type;
+  -webkit-animation-direction: @type;
+  animation-direction: @type;
+}
+
+/* Gradients */
+.gradient (@startColor: #444, @endColor: #333) {
+  background-color: @endColor;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(@startColor, @endColor);  /* FF 3.6 */
+  background-image: -ms-linear-gradient(top, @startColor, @endColor);  /* IE 10 */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor));  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(@startColor, @endColor);  /* Safari 5.1+, Chrome 10+ */
+  background-image: linear-gradient(top, @startColor, @endColor);
+}
+
+.horizontal-gradient (@startColor: #444, @endColor: #333) {
+  background-color: @endColor;
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(left, @startColor 25%, @endColor 100%); /* FF 3.6 */
+  background: -ms-linear-gradient(left, @startColor, @endColor);  /* IE 10 */
+  background: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor)); /* Safari 4+, Chrome */
+  background: linear-gradient(left, @startColor, @endColor);
+}
+
+.radial-gradient (@startColor: #444, @endColor: #333) {
+  background: @endColor;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 501, color-stop(0, @startColor), color-stop(1, @endColor)); /* Safari, Chrome 10 */
+  background-image: -webkit-radial-gradient(center, circle cover, @startColor 0%, @endColor 100%); /* Chrome 11+ */
+  background-image: -moz-radial-gradient(center, circle cover, @startColor 0%, @endColor 100%);
+  background-image: -ms-radial-gradient(center, circle cover, @startColor 0%, @endColor 100%); /* IE10+ */
+  background-image: radial-gradient(center, circle cover, @startColor 0%, @endColor 100%); /* standard syntax */
+}
+
+.rainbow-gradient (@startColor: #444, @nextColors: #333) {
+  background-color: @startColor;
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(left, @startColor, @nextColors); /* FF 3.6 */
+  background: -ms-linear-gradient(left, @startColor, @nextColors);  /* IE 10 */
+  background: -webkit-linear-gradient(left, @startColor, @nextColors); /* Safari 4+, Chrome */
+  background: linear-gradient(left, @startColor, @nextColors);
+}

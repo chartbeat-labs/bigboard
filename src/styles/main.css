@@ -1,387 +1,101 @@
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-/* line 11, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+/* /css/common/reset.less
+   (c) 2011 Chartbeat, Inc */
+/* line 4, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+}
+/* line 11, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
 article,
 aside,
-details,
-figcaption,
 figure,
 footer,
 header,
 hgroup,
-main,
 nav,
-section,
-summary {
+section {
   display: block;
 }
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-/* line 30, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 41, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 50, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-[hidden] {
-  display: none;
-}
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 64, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-html {
-  font-family: sans-serif;
-  /* 1 */
-
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-
-}
-/**
- * Remove default margin.
- */
-/* line 74, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-body {
+/* line 22, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd {
   margin: 0;
+  padding: 0;
 }
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-/* line 86, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-a:focus {
-  outline: thin dotted;
-}
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-/* line 94, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+/* line 36, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
 a:active,
-a:hover {
-  outline: 0;
+a:focus {
+  outline: none;
 }
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 108, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+/* line 41, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+ol,
+ul {
+  list-style: none;
 }
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 117, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 125, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-b,
-strong {
-  font-weight: bold;
-}
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 134, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-dfn {
-  font-style: italic;
-}
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 142, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 152, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-mark {
-  background: #ff0;
-  color: #000;
-}
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-/* line 161, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-/* line 173, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-pre {
-  white-space: pre-wrap;
-}
-/**
- * Set consistent quote types.
- */
-/* line 181, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+/* line 45, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+blockquote,
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: none;
 }
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 189, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-small {
-  font-size: 80%;
-}
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 197, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-/* line 205, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-sup {
-  top: -0.5em;
-}
-/* line 209, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-sub {
-  bottom: -0.25em;
-}
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-/* line 221, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-img {
-  border: 0;
-}
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-/* line 229, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-svg:not(:root) {
-  overflow: hidden;
-}
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-/* line 241, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-figure {
-  margin: 0;
-}
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-/* line 253, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 264, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-legend {
-  border: 0;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 275, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-
-  font-size: 100%;
-  /* 2 */
-
-  margin: 0;
-  /* 3 */
-
-}
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 289, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-button,
-input {
-  line-height: normal;
-}
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-/* line 301, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-button,
-select {
-  text-transform: none;
-}
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-/* line 314, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-
-  cursor: pointer;
-  /* 3 */
-
-}
-/**
- * Re-set default cursor for disabled elements.
- */
-/* line 326, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- */
-/* line 336, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-
-  padding: 0;
-  /* 2 */
-
-}
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-/* line 348, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-
-  box-sizing: content-box;
-}
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-/* line 360, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-/* line 369, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-/* line 380, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
-textarea {
-  overflow: auto;
-  /* 1 */
-
-  vertical-align: top;
-  /* 2 */
-
-}
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-/* line 393, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+/* line 49, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+/* line 54, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 59, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+ol {
+  padding-left: 0;
+  margin-left: 15px;
+}
+/* line 64, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+ul li *,
+li li {
+  font-size: 1em;
+}
+/* Clearfix */
+/* line 70, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+.clearfix:after,
+.wrap:after,
+.opposingFloatControl:after,
+.container:after,
+header:after,
+nav:after,
+section:after,
+footer:after,
+blockquote:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/* line 87, /Users/bstahl/labs/bigboard/src/styles/common/reset.less */
+* html .clearfix,
+* html .wrap,
+* html .opposingFloatControl,
+* html header,
+* html nav,
+* html section,
+* html footer,
+* html blockquote {
+  zoom: 1;
 }
 /*
  * Simple Fade In
@@ -1652,7 +1366,7 @@ header #error-message {
   position: absolute;
   top: 59px;
   right: 0;
-  font-family: 'proxima-nova', Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 /* line 13, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel.ng-hide-add,
@@ -1685,7 +1399,7 @@ header #error-message {
   line-height: 32px;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
-  font-family: 'proxima-nova' 'Helvetica Neue' 'Helvetica' 'Arial' sans-serif;
+  font-family: 'Helvetica' 'Arial' sans-serif;
   font-weight: bold;
   line-height: 16px;
   padding: 20px 0 5px 0;
@@ -1900,11 +1614,10 @@ header #error-message {
 #settings-panel #dropdowns .cb-combo-box input,
 #settings-panel #filters .cb-combo-box input {
   color: #97B8CB;
-  font-family: "proxima-nova";
   font-size: 14px;
   top: 2px;
 }
-/* line 185, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 184, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #dropdowns .cb-drop-down .dropdown,
 #settings-panel #filters .cb-drop-down .dropdown,
 #settings-panel #dropdowns .cb-combo-box .dropdown,
@@ -1941,7 +1654,7 @@ header #error-message {
   /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
 
 }
-/* line 199, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 198, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #dropdowns .menu,
 #settings-panel #filters .menu {
   border: 1px solid #13212B;
@@ -1949,14 +1662,14 @@ header #error-message {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 205, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 204, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #dropdowns .menu li,
 #settings-panel #filters .menu li {
   color: #97B8CB;
   padding: 5px;
   text-align: left;
 }
-/* line 212, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 211, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #dropdowns .dropdown-select,
 #settings-panel #filters .dropdown-select {
   -webkit-appearance: none;
@@ -1978,17 +1691,17 @@ header #error-message {
   top: 2px;
   position: relative;
 }
-/* line 225, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 224, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #dropdowns .dropdown-select:hover,
 #settings-panel #filters .dropdown-select:hover {
   cursor: pointer;
 }
-/* line 232, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 231, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box {
   display: block;
   position: relative;
 }
-/* line 236, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 235, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box input {
   margin: 0;
   position: absolute;
@@ -2001,12 +1714,12 @@ header #error-message {
   background: #1f3442;
   color: #5c819c;
 }
-/* line 248, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 247, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box input:active,
 #settings-panel #filters cb-combo-box input:focus {
   outline: none;
 }
-/* line 252, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 251, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box .menu {
   position: absolute;
   top: 25px;
@@ -2016,13 +1729,13 @@ header #error-message {
   z-index: 20;
   padding: 0;
 }
-/* line 260, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 259, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box .menu ul {
   overflow: scroll;
   list-style-type: none;
   padding: 0;
 }
-/* line 265, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 264, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box .menu li {
   cursor: pointer;
   font-size: 14px;
@@ -2033,27 +1746,125 @@ header #error-message {
   text-align: left;
   width: 100%;
 }
-/* line 274, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 273, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box .menu li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-/* line 278, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 277, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box .menu li .label {
   float: left;
   margin-left: 5px;
 }
-/* line 283, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 282, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box .menu li .people {
   float: right;
   margin-right: 5px;
 }
-/* line 290, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+/* line 289, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
 #settings-panel #filters cb-combo-box.active .menu {
   /*display: block;*/
 
 }
+/* line 1, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down {
+  display: block;
+  position: relative;
+  height: 25px;
+  background: #1f3442;
+  -moz-border-radius: 3px;
+  /* FF 1+ */
+
+  -webkit-border-radius: 3px;
+  /* Safari 3-4, iOS 1+, Android 1.5+ */
+
+  border-radius: 3px;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+
+}
+/* line 7, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down .cb-drop-down {
+  height: 25px;
+}
+/* line 13, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down .selection {
+  margin: 0;
+  position: absolute;
+  left: 2px;
+  height: 25px;
+  border: none;
+  border-radius: 2px;
+  padding: 0 5px;
+  color: #5c819c;
+  line-height: 25px;
+  font-size: 12px;
+}
+/* line 25, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down .dropdown {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 35px;
+  background-color: #5d7382;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(#70899b, #5d7382);
+  /* FF 3.6 */
+
+  background-image: -ms-linear-gradient(top, #70899b, #5d7382);
+  /* IE 10 */
+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70899b), to(#5d7382));
+  /* Safari 4+, Chrome */
+
+  background-image: -webkit-linear-gradient(#70899b, #5d7382);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: linear-gradient(top, #70899b, #5d7382);
+  -moz-border-radius: 0 3px 3px 0;
+  /* FF 1+ */
+
+  -webkit-border-radius: 0 3px 3px 0;
+  /* Safari 3-4, iOS 1+, Android 1.5+ */
+
+  border-radius: 0 3px 3px 0;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+
+}
+/* line 34, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down .menu {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  background: #1f3442;
+  z-index: 20;
+  padding: 0;
+}
+/* line 42, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down .menu ul {
+  overflow: scroll;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 47, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down .menu li {
+  cursor: pointer;
+  font-size: 14px;
+  text-shadow: none;
+  color: #5c819c;
+  font-weight: normal;
+}
+/* line 53, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down .menu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 59, /Users/bstahl/labs/bigboard/src/scripts/common/components/cbDropDown/cbDropDown.less */
+cb-drop-down.active .menu {
+  /*display: block;*/
+
+}
 /* Styles */
-/* line 11, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 12, /Users/bstahl/labs/bigboard/src/styles/main.less */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2061,7 +1872,7 @@ header #error-message {
   margin: 0;
   padding: 0;
 }
-/* line 18, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 19, /Users/bstahl/labs/bigboard/src/styles/main.less */
 html,
 body,
 .page-container,
@@ -2069,42 +1880,42 @@ body,
   height: 100%;
   width: 100%;
 }
-/* line 26, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 27, /Users/bstahl/labs/bigboard/src/styles/main.less */
 body {
-  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   color: #e3eaed;
   background-color: #2f4859;
 }
 /* Header */
 /* Bigboard & Themes */
-/* line 36, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 37, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard {
   height: 100%;
   width: 100%;
 }
-/* line 40, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 41, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard.dark-theme {
   color: #e3eaed;
   background-color: #2f4859;
 }
-/* line 44, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 45, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard.dark-theme .page-numbers-total {
   color: #e3eaed;
 }
-/* line 49, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 50, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard.light-theme {
   background-color: #ffffff;
   color: #23313b;
 }
-/* line 53, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 54, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard.light-theme .page-numbers-total {
   color: #23313b;
 }
-/* line 57, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 58, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard.light-theme #settings-panel h3 {
   text-shadow: none;
 }
-/* line 61, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 62, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard.light-theme #settings-panel #dropdowns .dropdown-select,
 .bigboard.light-theme #settings-panel #toggles .toggle,
 .bigboard.light-theme #settings-panel #toggles .toggle:before,
@@ -2112,7 +1923,7 @@ body {
   color: #23313b;
   background-color: #9FC5E2;
 }
-/* line 69, /Users/bstahl/labs/bigboard/src/styles/main.less */
+/* line 70, /Users/bstahl/labs/bigboard/src/styles/main.less */
 .bigboard.light-theme #settings-panel #toggles .toggle label,
 .bigboard.light-theme #settings-panel #toggles .toggle-label {
   background-color: #2f4859;

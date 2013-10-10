@@ -3,12 +3,20 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     connect: {
-      server: {
+      dev: {
         options: {
           port: 9000,
           base: 'src',
-          open: 'http://localhost:<%= connect.server.options.port %>'
+          open: 'http://localhost:<%= connect.dev.options.port %>/#/domain.com?apiKey=apikey'
+        }
+      },
+      prod: {
+        options: {
+          port: 9001,
+          base: 'dist',
+          open: 'http://localhost:<%= connect.prod.options.port %>/#/domain.com?apiKey=apikey'
         }
       }
     },
@@ -17,7 +25,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/**/*.js'],
+        src: ['src/scripts/**/*.js'],
         dest: 'dist/<%= pkg.name %>.js'
       }
     },
@@ -32,7 +40,7 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'src/**/*.js',],
       options: {
         jshintrc: '.jshintrc',
       }
@@ -44,7 +52,7 @@ module.exports = function(grunt) {
           yuicompress: true
         },
         files: {
-          'src/styles/main.css': 'src/styles/main.less'
+          'dist/styles/main.css': 'src/styles/main.less'
         }
       },
       watch: {
@@ -65,7 +73,7 @@ module.exports = function(grunt) {
       files: ['<%= jshint.files %>',
               'src/*'
             ],
-      tasks: ['jshint'],
+      // tasks: ['jshint'],
       options: {
         livereload: true,
         dateFormat: function(time) {
@@ -95,7 +103,7 @@ module.exports = function(grunt) {
     }
 
     grunt.task.run([
-      'connect',
+      'connect:dev',
       'less:watch',
       'watch'
     ]);

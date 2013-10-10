@@ -1,0 +1,25 @@
+.cb-animated-list {
+  list-style: none;
+  padding: 0px;
+
+  > li {
+    position: absolute;
+    width: 100%;
+  }
+
+  .animate-enter {
+    visibility: hidden;
+  }
+
+  .animate-enter.animate-enter-active {
+
+  }
+
+  :not(.animate-enter) {
+    .transition(1000ms top cubic-bezier(1.000, 0.000, 0.000, 1.000));
+  }
+
+  .animate-leave.animate-leave-active {
+    visibility: hidden;
+  }
+}

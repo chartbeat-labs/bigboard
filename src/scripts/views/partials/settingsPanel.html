@@ -1,0 +1,40 @@
+<div id="toggles">
+	<div class="toggle toggle-network" ng-click="toggleModel('hideNetworkTotal')">
+		<h3>Network Total</h3>
+		<div class="slider">
+			<input name="slider-network" type="checkbox" ng-model="hideNetworkTotal" id="slider-network" disabled>
+			<label for="slider-network">
+				<span ng-if="hideNetworkTotal" class='slider-label'>hidden</span>
+				<span ng-if="!hideNetworkTotal" class='slider-label'>shown</span>
+			</label>
+		</div><!--/end toggle-->
+	</div><!--/end toggle-network-->
+	<div class="toggle toggle-landing" ng-click="toggleModel('hideLandingPages')">
+		<h3>Landing Pages</h3>
+		<div class="slider">
+			<input name="slider-landing" type="checkbox" ng-model="hideLandingPages" id="slider-landing" disabled>
+				<label for="slider-landing">
+					<span ng-if="hideLandingPages" class='slider-label'>hidden</span>
+					<span ng-if="!hideLandingPages" class='slider-label'>shown</span>
+				</label>
+		</div><!--/end toggle-->
+	</div><!--/end toggle-landing-->
+	<div class="toggle toggle-numbers" ng-click="toggleModel('hideNumbers')">
+		<h3>Hide Numbers</h3>
+		<div class="slider">
+			<input name="slider-numbers" type="checkbox" ng-model="hideNumbers" id="slider-numbers" disabled>
+			<label for="slider-numbers">
+				<span ng-if="hideNumbers" class='slider-label'>hidden</span>
+				<span ng-if="!hideNumbers" class='slider-label'>shown</span>
+			</label>
+		</div><!--/end toggle-->
+	</div><!--/end toggle-numbers-->
+</div><!--/end toggles-->
+<div id="dropdowns">
+	<div class="dropdown">
+		<div class="dropdown-sortby">
+			<h3>Sort Top Pages By</h3>
+			<cb-drop-down model="sortBy">
+		</div><!--/end dropdown-sortby -->
+	</div><!--/end dropdown -->
+</div><!--/end dropdowns-->
