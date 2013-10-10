@@ -40,9 +40,12 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js',],
+      files: ['Gruntfile.js',
+              'src/**/*.js',
+              ],
       options: {
         jshintrc: '.jshintrc',
+        ignores: ['src/bower_components/**']
       }
     },
     less: {
