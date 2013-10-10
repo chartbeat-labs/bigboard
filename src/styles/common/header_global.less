@@ -1,0 +1,497 @@
+@global-header-height: 59px;
+
+.container:after, 
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+#global-header {
+
+  * {
+    // When we're on a dashboard demo page box-sizing: border-box fucks our shit up
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
+  background: #2d3d4b;
+  font-family: "proxima-nova";
+  padding: 15px 0;
+  position: relative;
+  // z-index 6 will be above the sharkbeat dashboard navigation bar (on demo page)
+  z-index: 6;
+
+  .gh-logo a {
+    float: left;
+    width: 176px;
+    height: 29px;
+    background: url('../../../../../../images/marketing/header/logo.png');
+    text-indent: -9999px;
+    display: block;
+  }
+
+  .container {
+    margin: 0 auto;
+    position: relative;
+    width: 990px;
+  }
+
+  nav {
+    float: right;
+  
+    ul {
+      float: none;
+      width: auto;
+    }
+  }
+
+  .chartbeat-signin {
+    .inline-error {
+      display: none;
+    }
+
+    .error {
+      .inline-error {
+        display: block;
+      }
+    }
+  }
+}
+
+.dashboard-nav {
+  position: relative;
+  .single-column {
+    min-width: 150px;
+  }
+}
+
+.header-nav,
+.dashboard-nav {
+  float: left;
+  margin: 0;
+
+  /* These annoyingly have to be here for the demo page, to override the global header styles used for CBP */ 
+
+  a {
+    border: none;
+    float: none;
+    font-weight: bold;
+    line-height: inherit;
+    text-decoration: none;
+    text-shadow: none;
+  }
+
+  a:hover {
+    border: none;
+  }
+
+  .menu-title {
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    margin: 0 0 0 0;
+    padding: 6px 15px 4px 15px;
+  }
+
+  &.button {
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0 0 0 15px;
+    text-align: left;
+    text-transform: none;
+  
+    .menu-title,
+    .submit-button {
+      .gradient(#49bfbd,#44b3b1);
+      box-shadow: none;
+      color: #fff;
+      border-radius: 3px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding: 7px 15px 8px 15px;
+      text-align: center;
+      text-shadow: none;
+      text-transform: uppercase;
+    }
+    &.sign-up .menu-title {
+      .gradient(#e55149,#d74d44);
+    }
+  }
+}
+
+.dashboard-nav a:hover {
+  color: #A8DED7;
+}
+
+.header-nav:hover .menu-title {
+  background: #263440;
+  border-radius: 0;
+  border-bottom: none;
+  height: 41px;
+  margin: -20px 0;
+  padding: 26px 15px 0 15px;
+}
+
+.header-nav.button:hover .menu-title {
+  background: #263440;
+  border-radius: 3px;
+  padding: 7px 15px 8px 15px;
+  border-bottom: none;
+  height: auto;
+  margin: 0;
+
+  &.cbp-signup {
+    background: #8AB8CC;
+    color: #fff;
+  }
+}
+
+.sub-nav {
+  -webkit-font-smoothing: antialiased;
+  background: #263440;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  bottom: 0;
+  color: #94B4CC;
+  display: none;
+  height: 130px;
+  left: -20px;
+  padding: 20px;
+  position: absolute;
+  top: 43px;
+  width: 1000px;
+  z-index: 950;
+
+  h2, h3 {
+    color: #fff;
+  }
+
+  &.single-column {
+    width: auto;
+    height: 100%;
+    padding-top: 10px;
+    left: 0;
+    .sub-nav-menu {
+      width: auto;
+      li {
+        width: auto;
+        &:nth-of-type(odd) {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+#global-header {
+  .description {
+    float: left;
+    width: 440px;
+
+    h2 {
+      font: bold 18px "proxima-nova";
+      letter-spacing: 0;
+      margin-bottom: 10px;
+    }
+  
+    p {        
+      color: #E4EAED;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.3em;
+    }
+  }
+}
+
+.sub-nav-menu {
+  float: right;
+  width: 440px;
+
+  h3 {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  li {
+    float: left;
+    width: 200px;
+  }
+
+  li:nth-of-type(odd) {
+    margin-right: 40px;
+  }
+
+  li.full-width {
+    clear: both;
+    float: none;
+    width: 440px;
+  }
+}
+
+&.header-nav:hover .sub-nav {
+  display: block;
+}
+
+.header-nav:hover a {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  border-radius: 0;
+  color: #7cd9d7;
+  display: block;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  padding: 8px 0;
+
+  &.primary-cta { 
+    color: #ff584f;    
+    span {
+      background: url('../../../../../images/marketing/header/icon-cta-large.png') no-repeat;
+      height: 13px;
+      margin-top: 3px;
+    }
+  
+    &:hover {
+      span {
+        background-position: 0 -13px;
+      }
+    }
+  }
+
+  &.social-link {
+    color: #97c4ec;
+  }
+
+  &:hover {
+    color: #E4EAED;
+  }
+
+  span {
+      display: block;
+      float: left;
+      height: 15px;
+      margin-right: 5px;
+      width: 20px;
+
+    &.twitter {
+      background: url('../../../../../images/marketing/header/icon-twitter.png') no-repeat;
+    }
+    &.facebook {
+      background: url('../../../../../images/marketing/header/icon-facebook.png') no-repeat; 
+    }
+    &.support {
+      background: url('../../../../../images/marketing/header/icon-support.png') no-repeat; 
+    }
+    &.contact {
+      background: url('../../../../../images/marketing/header/icon-contact.png') no-repeat; 
+    }
+  }
+
+  &:hover {
+    span {
+      &.twitter,
+      &.contact, {
+        background-position: 0 -16px;
+      }
+      &.facebook,
+      &.support, {
+        background-position: 0 -15px;
+      }
+    }
+  }
+}
+
+.header-nav.button:hover {
+
+  .sub-nav.menu-form {
+    background: none;
+    height: auto;
+    left: auto;
+    padding: 10px 0 0 0;
+    right: -20px;
+    top: 29px;
+    width: 320px;
+
+    .lead-gen,
+    .chartbeat-signin,
+    .chartbeat-signup {
+      background: #2d3d4b;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      float: right;
+      padding: 20px 20px 15px 20px;
+      width: 300px;
+    
+      p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.3em;
+        margin-top: 5px;
+      }
+
+      .comments-field {
+        display: none;
+      }
+    }
+
+    .chartbeat-signin {
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      -webkit-font-smoothing: antialiased;
+      border-bottom: none;
+      color: #94b4cc;
+      font: bold 14px "proxima-nova";
+      letter-spacing: 1px;
+      margin: 0 0 10px 0;
+      text-transform: uppercase;
+    }
+
+    input,
+    textarea {
+      border: none;
+      border-radius: 3px;
+      color: #698BAC;
+      display: block;
+      float: left;
+      font: 400 14px "proxima-nova";
+      margin: 0 0 13px 0;
+      padding: 7px 5px;
+      width: 290px;
+      
+      &.small-field {
+        width: 133px;
+      }
+
+      &.first {
+        margin-right: 14px;
+      }
+    }
+
+    input:first-of-type {
+      margin-right: 14px;
+    }
+
+    a {
+      border: none;
+      display: inline;
+      padding: 0;
+    }
+
+    .submit-button {
+      -webkit-font-smoothing: antialiased;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      float: right;
+      font: bold 13px "proxima-nova";
+      margin: 0 0 10px 0;
+    
+      &.sign-up-button {
+        .gradient(#e55149,#d74d44);
+        float: none;
+        padding: 10px 5px;
+        width: 290px;
+      }
+
+      &:hover {
+        background: #263440
+      }
+    }
+
+    .errors li,
+    p.inline-error {
+      color: #EE6C56;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.cb {
+  .sub-nav {
+    height: 120px;
+  }
+  &.header-nav:hover .sub-nav-menu li a {
+    font-size: 16px;
+  }
+}
+
+.cb-ads {
+  .sub-nav {
+    height: 100px;
+  }
+}
+
+.about {
+  .sub-nav {
+    height: 165px;
+  }
+}
+
+.sign-up {
+  .menu-form-container {
+  }
+}
+
+/* Styles for CBP dashboard */
+
+#dashboard-header {
+  margin-bottom: 20px;
+  .container {
+    width: 1240px;
+  }
+
+  nav {
+    margin-right: 220px;
+  }
+
+  .sub-nav.menu-form {
+    right: 200px;
+  }
+}
+
+#cb-header {
+  background: #2d3d4b; 
+  padding: 5px 0;
+
+  .container {
+    width: 990px;
+  }
+
+  p {
+    float: left;
+    margin-top: 10px;
+    a {    
+      width: 176px;
+      height: 29px;
+      background: url('../../../../../images/marketing/header/logo.png');
+      text-indent: -9999px;
+      display: block;
+    }
+  }
+
+  ul {
+    float: right;
+    
+    li {
+      display: block;
+      float: left;
+    
+      a {
+    -webkit-font-smoothing: antialiased;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+}

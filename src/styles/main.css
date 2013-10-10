@@ -1,0 +1,2134 @@
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 11, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/**
+ * Remove default margin.
+ */
+/* line 74, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+a:focus {
+  outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 125, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 161, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+pre {
+  white-space: pre-wrap;
+}
+/**
+ * Set consistent quote types.
+ */
+/* line 181, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 197, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 205, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+sup {
+  top: -0.5em;
+}
+/* line 209, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 275, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+
+  font-size: 100%;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 289, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+button,
+input {
+  line-height: normal;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 301, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 314, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 326, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 336, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 360, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 369, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, /Users/bstahl/labs/bigboard/src/styles/common/normalize.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+ * Simple Fade In
+ */
+@-webkit-keyframes fadeIn {
+  /* line 5, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+  }
+  /* line 6, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  /* line 10, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+  }
+  /* line 11, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  /* line 15, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+  }
+  /* line 16, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+  }
+}
+/*
+ * Fade In with a Scale Up
+ */
+@-webkit-keyframes fadeInScaleUp {
+  /* line 24, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  /* line 28, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes fadeInScaleUp {
+  /* line 35, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0);
+  }
+  /* line 39, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+@keyframes fadeInScaleUp {
+  /* line 46, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  /* line 50, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*
+ * Fade in and animate up
+ */
+@-webkit-keyframes fadeInUp {
+  /* line 61, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px) scale(0.95);
+  }
+  /* line 66, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+  }
+  /* line 71, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+  }
+}
+@-moz-keyframes fadeInUp {
+  /* line 78, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px) scale(0.95);
+  }
+  /* line 83, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -moz-transform: translateY(0) scale(1);
+  }
+  /* line 88, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0) scale(1);
+  }
+}
+@keyframes fadeInUp {
+  /* line 95, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  /* line 100, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  /* line 105, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/**
+ * Fade in from the left
+ */
+@-webkit-keyframes fadeInLeft {
+  /* line 115, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  /* line 120, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInLeft {
+  /* line 127, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+  /* line 132, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInLeft {
+  /* line 139, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+  /* line 144, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  /* line 151, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  /* line 156, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/**
+ * Fade in from the right
+ */
+@-webkit-keyframes fadeInRight {
+  /* line 166, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+  }
+  /* line 171, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInRight {
+  /* line 178, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px);
+  }
+  /* line 183, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInRight {
+  /* line 190, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px);
+  }
+  /* line 195, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  /* line 202, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  /* line 207, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Fade out and animate down
+ */
+@-webkit-keyframes fadeOutDown {
+  /* line 218, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+  }
+  /* line 223, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 0;
+    -webkit-transform: translateY(20px) scale(0.95);
+  }
+  /* line 228, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(20px) scale(0.95);
+  }
+}
+@-moz-keyframes fadeOutDown {
+  /* line 235, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0) scale(1);
+  }
+  /* line 240, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 0;
+    -moz-transform: translateY(20px) scale(0.95);
+  }
+  /* line 245, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(20px) scale(0.95);
+  }
+}
+@keyframes fadeOutDown {
+  /* line 252, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  /* line 257, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  /* line 262, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+/**
+ * Fade in while sliding in from the top
+ */
+@-webkit-keyframes slideFromTop {
+  /* line 272, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -webkit-transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 273, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideFromTop {
+  /* line 276, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -moz-transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 277, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes slideFromTop {
+  /* line 280, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -o-transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 281, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromTop {
+  /* line 284, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  /* line 285, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/**
+ * Fade in while sliding in from the bottom
+ */
+@-webkit-keyframes slideFromBottom {
+  /* line 292, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -webkit-transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 293, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-moz-keyframes slideFromBottom {
+  /* line 296, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -moz-transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 297, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -moz-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes slideFromBottom {
+  /* line 300, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -o-transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 301, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromBottom {
+  /* line 304, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  /* line 305, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/**
+ * Fade in while sliding in from the right
+ */
+@-webkit-keyframes slideFromRight {
+  /* line 312, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  /* line 317, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -webkit-transform: translateX(75%);
+  }
+  /* line 322, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes slideFromRight {
+  /* line 329, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100%);
+  }
+  /* line 334, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -moz-transform: translateX(75%);
+  }
+  /* line 339, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes slideFromRight {
+  /* line 346, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(100%);
+  }
+  /* line 351, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    -o-transform: translateX(75%);
+  }
+  /* line 356, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  /* line 363, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  /* line 368, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    transform: translateX(75%);
+  }
+  /* line 373, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/**
+ * Fade in while sliding in from the left
+ */
+@-webkit-keyframes slideFromLeft {
+  /* line 383, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  /* line 388, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: .5;
+    -webkit-transform: translateX(-70%);
+  }
+  /* line 393, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes slideFromLeft {
+  /* line 400, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+  /* line 405, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: .5;
+    -moz-transform: translateX(-70%);
+  }
+  /* line 410, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@-o-keyframes slideFromLeft {
+  /* line 417, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-100%);
+  }
+  /* line 422, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: .5;
+    -o-transform: translateX(-70%);
+  }
+  /* line 427, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0%);
+  }
+}
+@keyframes slideFromLeft {
+  /* line 434, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  /* line 439, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  25% {
+    opacity: 1;
+    transform: translateX(75%);
+  }
+  /* line 444, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+/**
+ * Fade out while sliding to the left
+ */
+@-webkit-keyframes slideOutLeft {
+  /* line 455, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  /* line 460, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    -webkit-transform: translateX(-75%);
+  }
+  /* line 465, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+}
+@-moz-keyframes slideOutLeft {
+  /* line 472, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+  /* line 477, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    -moz-transform: translateX(-75%);
+  }
+  /* line 482, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+}
+@-o-keyframes slideOutLeft {
+  /* line 489, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+  /* line 494, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    -o-transform: translateX(-75%);
+  }
+  /* line 499, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-100%);
+  }
+}
+@keyframes slideOutLeft {
+  /* line 506, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* line 511, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  75% {
+    opacity: 1;
+    transform: translateX(-75%);
+  }
+  /* line 516, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+/**
+ * Make the background "pulse" slowly
+ */
+@-webkit-keyframes pulseBackground {
+  /* line 527, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  /* line 531, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  50% {
+    background: rgba(0, 0, 0, 0.07);
+  }
+  /* line 535, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+@-moz-keyframes pulseBackground {
+  /* line 541, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  /* line 545, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  50% {
+    background: rgba(0, 0, 0, 0.07);
+  }
+  /* line 549, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+@keyframes pulseBackground {
+  /* line 555, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+  /* line 559, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  50% {
+    background: rgba(0, 0, 0, 0.07);
+  }
+  /* line 563, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+/**
+ * Zoom in while fading in, then fade out while staying at full size
+ */
+@-webkit-keyframes zoomInFadeOut {
+  /* line 573, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    -webkit-transform: scale(0);
+  }
+  /* line 582, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  8% {
+    -webkit-transform: scale(1);
+  }
+  /* line 587, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  85% {
+    -webkit-transform: scale(1);
+  }
+  /* line 592, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    -webkit-transform: scale(0);
+  }
+}
+@-moz-keyframes zoomInFadeOut {
+  /* line 600, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0;
+  }
+  /* line 605, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  10% {
+    -moz-transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 610, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  80% {
+    -moz-transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 615, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes zoomInFadeOut {
+  /* line 622, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  /* line 627, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  10% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 632, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  80% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  /* line 637, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+/**
+ * Rotate 360 degrees
+ */
+@-webkit-keyframes rotate {
+  /* line 647, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 648, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  /* line 651, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 652, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotate {
+  /* line 655, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  /* line 656, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  /* line 659, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    -o-transform: rotate(0deg);
+  }
+  /* line 660, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  /* line 663, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  from {
+    transform: rotate(0deg);
+  }
+  /* line 664, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*
+ * Flip in on X axis
+ */
+@-webkit-keyframes flipInX {
+  /* line 671, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 676, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 680, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  70% {
+    -webkit-transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 684, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes flipInX {
+  /* line 690, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 695, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  40% {
+    -moz-transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 699, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  70% {
+    -moz-transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 703, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-o-keyframes flipInX {
+  /* line 709, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 714, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  40% {
+    -o-transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 718, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  70% {
+    -o-transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 722, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes flipInX {
+  /* line 728, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  /* line 733, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  40% {
+    transform: perspective(400px) rotateX(-6deg);
+  }
+  /* line 737, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  70% {
+    transform: perspective(400px) rotateX(6deg);
+  }
+  /* line 741, /Users/bstahl/labs/bigboard/src/styles/common/animations.less */
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+/* Drop shadows */
+/* Rounded Corners */
+/* Transitions */
+/* Transforms */
+/* Gradients */
+/* User Select */
+/* FlexBox Model */
+/**
+ * Box Sizing Border Box
+ * http://paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+/* Animation */
+/* Animation Delay */
+/* Animation Fill Mode */
+/* Animation Direction */
+/* Perspective (for 3D transforms */
+/* 3D transform shortcuts */
+/* Color for the placeholder attribute of inputs and textareas */
+/* Color Variables */
+/* Size Variables */
+/* Transitions Variables */
+/* line 2, /Users/bstahl/labs/bigboard/src/styles/header.less */
+header {
+  height: 60px;
+  left: 0;
+  padding: 15px 0;
+  right: 0;
+  top: 0;
+  position: relative;
+  width: 100%;
+  background-color: #1f3442;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(#213745, #1f3442);
+  /* FF 3.6 */
+
+  background-image: -ms-linear-gradient(top, #213745, #1f3442);
+  /* IE 10 */
+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#213745), to(#1f3442));
+  /* Safari 4+, Chrome */
+
+  background-image: -webkit-linear-gradient(#213745, #1f3442);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: linear-gradient(top, #213745, #1f3442);
+  border-bottom: 1px solid #1A2933;
+}
+/* line 19, /Users/bstahl/labs/bigboard/src/styles/header.less */
+header #logo {
+  height: 26px;
+  left: 30px;
+  position: absolute;
+  width: 258px;
+}
+/* line 26, /Users/bstahl/labs/bigboard/src/styles/header.less */
+header #network-total {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 5px;
+  font-size: 40px;
+}
+/* line 34, /Users/bstahl/labs/bigboard/src/styles/header.less */
+header .settings-toggle {
+  width: 30px;
+  height: 59px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  -moz-transition: 0.2s opacity ease-in-out;
+  /* FF 4+ */
+
+  -webkit-transition: 0.2s opacity ease-in-out;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.2s opacity ease-in-out;
+  -ms-transition: 0.2s opacity ease-in-out;
+  transition: 0.2s opacity ease-in-out;
+}
+/* line 44, /Users/bstahl/labs/bigboard/src/styles/header.less */
+header .settings-toggle .settings-icon {
+  fill: #7592a3;
+  height: 30px;
+  margin-top: 12px;
+}
+/* line 50, /Users/bstahl/labs/bigboard/src/styles/header.less */
+header .settings-toggle:hover {
+  opacity: 1;
+}
+/* line 55, /Users/bstahl/labs/bigboard/src/styles/header.less */
+header #error-message {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: #ff4444;
+}
+/* line 1, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 59px;
+  width: 100%;
+  -moz-transition: 0.33s width cubic-bezier(0.694, 0.0482, 0.335, 1);
+  /* FF 4+ */
+
+  -webkit-transition: 0.33s width cubic-bezier(0.694, 0.0482, 0.335, 1);
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.33s width cubic-bezier(0.694, 0.0482, 0.335, 1);
+  -ms-transition: 0.33s width cubic-bezier(0.694, 0.0482, 0.335, 1);
+  transition: 0.33s width cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+/* line 12, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages.expanded {
+  width: 85%;
+}
+/* line 16, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages li {
+  border-bottom: 1px solid #233743;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  left: 0;
+  margin: 0;
+  padding-top: 10px;
+  right: 0;
+  white-space: nowrap;
+  width: 100%;
+}
+/* line 26, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages li a {
+  text-decoration: none;
+  color: inherit;
+  -moz-transition: all 0.1s ease;
+  /* FF 4+ */
+
+  -webkit-transition: all 0.1s ease;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+/* line 32, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages li a:visited {
+  color: inherit;
+}
+/* line 36, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages li a:hover {
+  -moz-transition: all 0.1s ease;
+  /* FF 4+ */
+
+  -webkit-transition: all 0.1s ease;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  color: #6fbcb4;
+}
+/* line 42, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-wrap {
+  padding: 5px 0;
+  position: relative;
+  height: 56px;
+  width: 100%;
+}
+/* line 49, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-chevrons-container {
+  left: 30px;
+  width: 24px;
+  position: absolute;
+}
+/* line 54, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-chevrons-container .chevron {
+  margin-top: 5px;
+  width: 24px;
+  -moz-transition: 0.2s all linear;
+  /* FF 4+ */
+
+  -webkit-transition: 0.2s all linear;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.2s all linear;
+  -ms-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+/* line 61, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-chevrons-container .chevron-up {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  fill: #6fbcb4;
+}
+/* line 66, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-chevrons-container .chevron-down {
+  fill: #d74d44;
+}
+/* line 72, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container {
+  -webkit-font-smoothing: antialiased;
+  color: #96B8CB;
+  font-family: "ubuntu condensed";
+  opacity: 1;
+  position: absolute;
+  right: 30px;
+  text-align: right;
+  font-size: 32px;
+}
+/* line 82, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .engaged_time {
+  color: #71b3b7;
+}
+/* line 85, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .social {
+  color: #928fbc;
+}
+/* line 89, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .internal {
+  color: #e5de97;
+}
+/* line 92, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .new {
+  color: #c3dddf;
+}
+/* line 96, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.single-number {
+  opacity: 1;
+}
+/* line 100, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.single-number-add,
+#pages .page-numbers-container.single-number-remove {
+  -moz-transition: 0.33s all linear;
+  /* FF 4+ */
+
+  -webkit-transition: 0.33s all linear;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.33s all linear;
+  -ms-transition: 0.33s all linear;
+  transition: 0.33s all linear;
+}
+/* line 105, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.single-number-remove {
+  opacity: 0;
+}
+/* line 109, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.single-number-remove.single-number-remove-active {
+  opacity: 1;
+}
+/* line 113, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.single-number-add {
+  right: -200px;
+}
+/* line 117, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.single-number-add.single-number-add-active {
+  right: 30px;
+}
+/* line 122, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.ng-enter,
+#pages .page-numbers-container.ng-leave {
+  -moz-transition: 0.33s all linear;
+  /* FF 4+ */
+
+  -webkit-transition: 0.33s all linear;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.33s all linear;
+  -ms-transition: 0.33s all linear;
+  transition: 0.33s all linear;
+}
+/* line 127, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.ng-enter,
+#pages .page-numbers-container.ng-leave.ng-leave-active {
+  right: -200px;
+}
+/* line 132, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container.ng-leave,
+#pages .page-numbers-container.ng-enter.ng-enter-active {
+  right: 30px;
+}
+/* line 139, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .page-numbers-sortval.ng-leave,
+#pages .page-numbers-container .page-numbers-sortval.ng-leave.ng-leave-active {
+  display: none;
+}
+/* line 144, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .page-numbers-sortval.ng-enter {
+  -moz-transition: 0.33s all linear;
+  /* FF 4+ */
+
+  -webkit-transition: 0.33s all linear;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.33s all linear;
+  -ms-transition: 0.33s all linear;
+  transition: 0.33s all linear;
+  opacity: 0;
+}
+/* line 148, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .page-numbers-sortval.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+/* line 153, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .page-numbers-total {
+  display: inline-block;
+  font-size: 80%;
+  opacity: 0.7;
+  width: 70px;
+}
+/* line 158, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .page-numbers-total.ng-enter,
+#pages .page-numbers-container .page-numbers-total.ng-leave {
+  -moz-transition: 0.33s all linear;
+  /* FF 4+ */
+
+  -webkit-transition: 0.33s all linear;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.33s all linear;
+  -ms-transition: 0.33s all linear;
+  transition: 0.33s all linear;
+}
+/* line 163, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .page-numbers-total.ng-enter,
+#pages .page-numbers-container .page-numbers-total.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 168, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-numbers-container .page-numbers-total.ng-leave,
+#pages .page-numbers-container .page-numbers-total.ng-enter.ng-enter-active {
+  opacity: 0.5;
+}
+/* line 175, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-favicon-container {
+  float: left;
+  width: 50px;
+}
+/* line 179, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-favicon-container img {
+  background: #eee;
+  margin: 3px auto 0 auto;
+  padding: 3px;
+}
+/* line 186, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-title-container {
+  -webkit-font-smoothing: antialiased;
+  float: left;
+  font-weight: 400;
+  font-size: 32px;
+  left: 70px;
+  position: absolute;
+  right: 200px;
+}
+/* line 195, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+#pages .page-title-container .page-title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* The Pages Animations (overding cb-animated-list.less)*/
+/* line 205, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+.cb-animated-list {
+  list-style: none;
+  padding: 0px;
+}
+/* line 209, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+.cb-animated-list > li {
+  position: absolute;
+  width: 100%;
+}
+/* line 214, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+.cb-animated-list .ng-enter,
+.cb-animated-list .ng-leave,
+.cb-animated-list .ng-move {
+  -moz-transition: 0.5s opacity linear;
+  /* FF 4+ */
+
+  -webkit-transition: 0.5s opacity linear;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.5s opacity linear;
+  -ms-transition: 0.5s opacity linear;
+  transition: 0.5s opacity linear;
+}
+/* line 220, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+.cb-animated-list .ng-leave,
+.cb-animated-list .ng-enter.ng-enter-active,
+.cb-animated-list .ng-move.ng-move-active {
+  opacity: 1;
+}
+/* line 226, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+.cb-animated-list .ng-enter,
+.cb-animated-list .ng-move,
+.cb-animated-list .ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 233, /Users/bstahl/labs/bigboard/src/styles/pages.less */
+.cb-animated-list :not(.ng-enter) {
+  -moz-transition: 1s top cubic-bezier(1, 0, 0, 1);
+  /* FF 4+ */
+
+  -webkit-transition: 1s top cubic-bezier(1, 0, 0, 1);
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 1s top cubic-bezier(1, 0, 0, 1);
+  -ms-transition: 1s top cubic-bezier(1, 0, 0, 1);
+  transition: 1s top cubic-bezier(1, 0, 0, 1);
+}
+/* line 1, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel {
+  background: #385A73;
+  border-left: 1px solid #233642;
+  border-top: 1px solid #192832;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: 59px;
+  right: 0;
+  font-family: 'proxima-nova', Helvetica, sans-serif;
+}
+/* line 13, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel.ng-hide-add,
+#settings-panel.ng-hide-remove {
+  display: block !important;
+  -moz-transition: 0.33s right cubic-bezier(0.694, 0.0482, 0.335, 1) 0.33s;
+  /* FF 4+ */
+
+  -webkit-transition: 0.33s right cubic-bezier(0.694, 0.0482, 0.335, 1) 0.33s;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: 0.33s right cubic-bezier(0.694, 0.0482, 0.335, 1) 0.33s;
+  -ms-transition: 0.33s right cubic-bezier(0.694, 0.0482, 0.335, 1) 0.33s;
+  transition: 0.33s right cubic-bezier(0.694, 0.0482, 0.335, 1) 0.33s;
+}
+/* line 21, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel.ng-hide-add.ng-hide-add-active,
+#settings-panel.ng-hide-remove {
+  right: -15%;
+}
+/* line 26, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel.ng-hide-add,
+#settings-panel.ng-hide-remove.ng-hide-remove-active {
+  right: 0;
+}
+/* line 31, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel h3 {
+  white-space: normal;
+  color: #101c23;
+  line-height: 32px;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'proxima-nova' 'Helvetica Neue' 'Helvetica' 'Arial' sans-serif;
+  font-weight: bold;
+  line-height: 16px;
+  padding: 20px 0 5px 0;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+/* line 45, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles {
+  width: 80%;
+  margin: 5% auto 30px auto;
+  text-align: center;
+}
+/* line 50, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .toggle {
+  margin: 0 0 30px 0;
+}
+/* line 54, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: #1f3442;
+  border: 1px solid #15232d;
+  -moz-border-radius: 3px;
+  /* FF 1+ */
+
+  -webkit-border-radius: 3px;
+  /* Safari 3-4, iOS 1+, Android 1.5+ */
+
+  border-radius: 3px;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* FF 3.5+ */
+
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* Safari 3+, Chrome */
+
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* Opera 10.5, IE 9, Chrome 10+ */
+
+  float: right;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+/* line 67, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider:after,
+#settings-panel #toggles .slider:before {
+  -webkit-font-smoothing: antialiased;
+  color: #94b8c8;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 -1px 1px #000000;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  z-index: 0;
+  width: 50%;
+}
+/* line 84, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider:after {
+  content: 'HIDE';
+  right: 0;
+}
+/* line 89, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider:before {
+  content: 'SHOW';
+  left: 0;
+}
+/* line 94, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider label {
+  width: 50%;
+  height: 24px;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  left: 2px;
+  padding: 7px;
+  right: 2px;
+  top: 2px;
+  text-transform: uppercase;
+  border: 1px solid #15232d;
+  color: #263742;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  -moz-transition: all 0.33s ease;
+  /* FF 4+ */
+
+  -webkit-transition: all 0.33s ease;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: all 0.33s ease;
+  -ms-transition: all 0.33s ease;
+  transition: all 0.33s ease;
+  -moz-border-radius: 3px;
+  /* FF 1+ */
+
+  -webkit-border-radius: 3px;
+  /* Safari 3-4, iOS 1+, Android 1.5+ */
+
+  border-radius: 3px;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+
+  background-color: #5d7382;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(#70899b, #5d7382);
+  /* FF 3.6 */
+
+  background-image: -ms-linear-gradient(top, #70899b, #5d7382);
+  /* IE 10 */
+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70899b), to(#5d7382));
+  /* Safari 4+, Chrome */
+
+  background-image: -webkit-linear-gradient(#70899b, #5d7382);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: linear-gradient(top, #70899b, #5d7382);
+}
+/* line 119, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider input[type=checkbox]:checked + label {
+  left: 50%;
+  margin-left: -2px;
+}
+/* line 124, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider-label {
+  -moz-transition: opacity 0.1s ease;
+  /* FF 4+ */
+
+  -webkit-transition: opacity 0.1s ease;
+  /* Safari 3.2+, Chrome */
+
+  -o-transition: opacity 0.1s ease;
+  -ms-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -50%;
+  width: 100%;
+}
+/* line 132, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider-label.ng-enter,
+#settings-panel #toggles .slider-label.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 137, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .slider-label.ng-leave,
+#settings-panel #toggles .slider-label.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+/* line 144, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .toggle-landing input#slider-landing[type=checkbox] {
+  visibility: hidden;
+}
+/* line 150, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .toggle-numbers input#slider-numbers[type=checkbox] {
+  visibility: hidden;
+}
+/* line 156, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #toggles .toggle-network input#slider-network[type=checkbox] {
+  visibility: hidden;
+}
+/* line 163, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns,
+#settings-panel #filters {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 169, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns .cb-drop-down,
+#settings-panel #filters .cb-drop-down,
+#settings-panel #dropdowns .cb-combo-box,
+#settings-panel #filters .cb-combo-box {
+  background: #1f3442;
+  -moz-border-radius: 3px;
+  /* FF 1+ */
+
+  -webkit-border-radius: 3px;
+  /* Safari 3-4, iOS 1+, Android 1.5+ */
+
+  border-radius: 3px;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+
+  border: 1px solid #14222C;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* FF 3.5+ */
+
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* Safari 3+, Chrome */
+
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* Opera 10.5, IE 9, Chrome 10+ */
+
+  height: 30px;
+}
+/* line 177, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns .cb-drop-down .selection,
+#settings-panel #filters .cb-drop-down .selection,
+#settings-panel #dropdowns .cb-combo-box .selection,
+#settings-panel #filters .cb-combo-box .selection,
+#settings-panel #dropdowns .cb-drop-down input,
+#settings-panel #filters .cb-drop-down input,
+#settings-panel #dropdowns .cb-combo-box input,
+#settings-panel #filters .cb-combo-box input {
+  color: #97B8CB;
+  font-family: "proxima-nova";
+  font-size: 14px;
+  top: 2px;
+}
+/* line 185, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns .cb-drop-down .dropdown,
+#settings-panel #filters .cb-drop-down .dropdown,
+#settings-panel #dropdowns .cb-combo-box .dropdown,
+#settings-panel #filters .cb-combo-box .dropdown {
+  border-left: 1px solid #13212B;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  width: 28px;
+  height: 28px;
+  line-height: 38px;
+  background-color: #5d7382;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(#70899b, #5d7382);
+  /* FF 3.6 */
+
+  background-image: -ms-linear-gradient(top, #70899b, #5d7382);
+  /* IE 10 */
+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70899b), to(#5d7382));
+  /* Safari 4+, Chrome */
+
+  background-image: -webkit-linear-gradient(#70899b, #5d7382);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: linear-gradient(top, #70899b, #5d7382);
+  -moz-border-radius: 0 2px 2px 0;
+  /* FF 1+ */
+
+  -webkit-border-radius: 0 2px 2px 0;
+  /* Safari 3-4, iOS 1+, Android 1.5+ */
+
+  border-radius: 0 2px 2px 0;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+
+}
+/* line 199, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns .menu,
+#settings-panel #filters .menu {
+  border: 1px solid #13212B;
+  border-top: none;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 205, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns .menu li,
+#settings-panel #filters .menu li {
+  color: #97B8CB;
+  padding: 5px;
+  text-align: left;
+}
+/* line 212, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns .dropdown-select,
+#settings-panel #filters .dropdown-select {
+  -webkit-appearance: none;
+  -moz-border-radius: 3px;
+  /* FF 1+ */
+
+  -webkit-border-radius: 3px;
+  /* Safari 3-4, iOS 1+, Android 1.5+ */
+
+  border-radius: 3px;
+  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+
+  border: none;
+  color: #5c819c;
+  padding-left: 8px;
+  height: 30px;
+  width: 100%;
+  text-shadow: none;
+  top: 2px;
+  position: relative;
+}
+/* line 225, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #dropdowns .dropdown-select:hover,
+#settings-panel #filters .dropdown-select:hover {
+  cursor: pointer;
+}
+/* line 232, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box {
+  display: block;
+  position: relative;
+}
+/* line 236, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box input {
+  margin: 0;
+  position: absolute;
+  right: 25px;
+  left: 1px;
+  height: 25px;
+  border: none;
+  border-radius: 2px;
+  padding: 0 5px;
+  background: #1f3442;
+  color: #5c819c;
+}
+/* line 248, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box input:active,
+#settings-panel #filters cb-combo-box input:focus {
+  outline: none;
+}
+/* line 252, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box .menu {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  background: #1f3442;
+  z-index: 20;
+  padding: 0;
+}
+/* line 260, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box .menu ul {
+  overflow: scroll;
+  list-style-type: none;
+  padding: 0;
+}
+/* line 265, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box .menu li {
+  cursor: pointer;
+  font-size: 14px;
+  text-shadow: none;
+  color: #97B8CB;
+  font-weight: normal;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+/* line 274, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box .menu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 278, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box .menu li .label {
+  float: left;
+  margin-left: 5px;
+}
+/* line 283, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box .menu li .people {
+  float: right;
+  margin-right: 5px;
+}
+/* line 290, /Users/bstahl/labs/bigboard/src/styles/settings-panel.less */
+#settings-panel #filters cb-combo-box.active .menu {
+  /*display: block;*/
+
+}
+/* Styles */
+/* line 11, /Users/bstahl/labs/bigboard/src/styles/main.less */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* line 18, /Users/bstahl/labs/bigboard/src/styles/main.less */
+html,
+body,
+.page-container,
+.content-container {
+  height: 100%;
+  width: 100%;
+}
+/* line 26, /Users/bstahl/labs/bigboard/src/styles/main.less */
+body {
+  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #e3eaed;
+  background-color: #2f4859;
+}
+/* Header */
+/* Bigboard & Themes */
+/* line 36, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard {
+  height: 100%;
+  width: 100%;
+}
+/* line 40, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard.dark-theme {
+  color: #e3eaed;
+  background-color: #2f4859;
+}
+/* line 44, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard.dark-theme .page-numbers-total {
+  color: #e3eaed;
+}
+/* line 49, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard.light-theme {
+  background-color: #ffffff;
+  color: #23313b;
+}
+/* line 53, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard.light-theme .page-numbers-total {
+  color: #23313b;
+}
+/* line 57, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard.light-theme #settings-panel h3 {
+  text-shadow: none;
+}
+/* line 61, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard.light-theme #settings-panel #dropdowns .dropdown-select,
+.bigboard.light-theme #settings-panel #toggles .toggle,
+.bigboard.light-theme #settings-panel #toggles .toggle:before,
+.bigboard.light-theme #settings-panel #toggles .toggle:after {
+  color: #23313b;
+  background-color: #9FC5E2;
+}
+/* line 69, /Users/bstahl/labs/bigboard/src/styles/main.less */
+.bigboard.light-theme #settings-panel #toggles .toggle label,
+.bigboard.light-theme #settings-panel #toggles .toggle-label {
+  background-color: #2f4859;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(#23313b, #2f4859);
+  /* FF 3.6 */
+
+  background-image: -ms-linear-gradient(top, #23313b, #2f4859);
+  /* IE 10 */
+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23313b), to(#2f4859));
+  /* Safari 4+, Chrome */
+
+  background-image: -webkit-linear-gradient(#23313b, #2f4859);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: linear-gradient(top, #23313b, #2f4859);
+  color: #e3eaed;
+}

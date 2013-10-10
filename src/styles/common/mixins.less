@@ -1,0 +1,222 @@
+/* Drop shadows */
+.box-shadow (...) {
+  -moz-box-shadow: @arguments;  /* FF 3.5+ */
+  -webkit-box-shadow: @arguments;  /* Safari 3+, Chrome */
+  box-shadow: @arguments;  /* Opera 10.5, IE 9, Chrome 10+ */
+}
+
+/* Rounded Corners */
+.border-radius (@radius: 5px) {
+  -moz-border-radius: @radius;  /* FF 1+ */
+  -webkit-border-radius: @radius;  /* Safari 3-4, iOS 1+, Android 1.5+ */
+  border-radius: @radius;  /* Opera 10.5, IE 9, Safari 5, Chrome, FF 4 */
+}
+
+/* Transitions */
+.transition (@transition) {
+  -moz-transition: @transition;  /* FF 4+ */
+  -webkit-transition: @transition;  /* Safari 3.2+, Chrome */
+  -o-transition: @transition;
+  -ms-transition: @transition;
+  transition: @transition;
+}
+
+.transition-delay (@delay: 1s) {
+  -moz-transition-delay: @delay;
+  -webkit-transition-delay: @delay;
+  -ms-transition-delay: @delay;
+  transition-delay: @delay;
+}
+
+/* Transforms */
+.transform (@transform) {
+  -moz-transform: @transform;
+  -webkit-transform: @transform;
+  -ms-transform: @transform;
+  transform: @transform;
+}
+
+.transform-origin (@transform: 50% 50%) {
+  -moz-transform-origin: @transform;
+  -webkit-transform-origin: @transform;
+  -ms-transform-origin: @transform;
+  transform-origin: @transform;
+}
+
+/* Gradients */
+.gradient (@startColor: #444, @endColor: #333) {
+  background-color: @endColor;
+  background-repeat: no-repeat;
+  background-image: -moz-linear-gradient(@startColor, @endColor);  /* FF 3.6 */
+  background-image: -ms-linear-gradient(top, @startColor, @endColor);  /* IE 10 */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor));  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(@startColor, @endColor);  /* Safari 5.1+, Chrome 10+ */
+  background-image: linear-gradient(top, @startColor, @endColor);
+}
+
+.horizontal-gradient (@startColor: #444, @endColor: #333) {
+  background-color: @endColor;
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(left, @startColor 25%, @endColor 100%); /* FF 3.6 */
+  background: -ms-linear-gradient(left, @startColor, @endColor);  /* IE 10 */
+  background: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor)); /* Safari 4+, Chrome */
+  background: linear-gradient(left, @startColor, @endColor);
+}
+
+.radial-gradient (@startColor: #444, @endColor: #333) {
+  background: @endColor;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 501, color-stop(0, @startColor), color-stop(1, @endColor)); /* Safari, Chrome 10 */
+  background-image: -webkit-radial-gradient(center, circle cover, @startColor 0%, @endColor 100%); /* Chrome 11+ */
+  background-image: -moz-radial-gradient(center, circle cover, @startColor 0%, @endColor 100%);
+  background-image: -ms-radial-gradient(center, circle cover, @startColor 0%, @endColor 100%); /* IE10+ */
+  background-image: radial-gradient(center, circle cover, @startColor 0%, @endColor 100%); /* standard syntax */
+}
+
+.rainbow-gradient (@startColor: #444, @nextColors: #333) {
+  background-color: @startColor;
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(left, @startColor, @nextColors); /* FF 3.6 */
+  background: -ms-linear-gradient(left, @startColor, @nextColors);  /* IE 10 */
+  background: -webkit-linear-gradient(left, @startColor, @nextColors); /* Safari 4+, Chrome */
+  background: linear-gradient(left, @startColor, @nextColors);
+}
+
+
+/* User Select */
+.user-select (@value: none) {
+  -moz-user-select: @value;
+  -webkit-user-select: @value;
+  user-select: @value;
+}
+
+.font-smoothing () {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* FlexBox Model */
+.flex-box () {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+
+/*  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-pack: center;
+  -moz-box-align: center;*/
+
+  display: box;
+  box-orient: vertical;
+  box-pack: center;
+  box-align: center;
+}
+
+/**
+ * Box Sizing Border Box
+ * http://paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+.border-box() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Animation */
+.animation (@anim: all 1s ease) {
+  -moz-animation: @anim;
+  -ms-animation: @anim;
+  -o-animation: @anim;
+  -webkit-animation: @anim;
+  animation: @anim;
+}
+
+/* Animation Delay */
+.animation-delay (@time: 1s) {
+  -moz-animation-delay: @time;
+  -ms-animation-delay: @time;
+  -o-animation-delay: @time;
+  -webkit-animation-delay: @time;
+  animation-delay: @time;
+}
+
+/* Animation Fill Mode */
+.animation-fill-mode (@type: none) {
+  -moz-animation-fill-mode: @type;
+  -ms-animation-fill-mode: @type;
+  -o-animation-fill-mode: @type;
+  -webkit-animation-fill-mode: @type;
+  animation-fill-mode: @type;
+}
+
+/* Animation Direction */
+.animation-direction (@type: none) {
+  -moz-animation-direction: @type;
+  -ms-animation-direction: @type;
+  -o-animation-direction: @type;
+  -webkit-animation-direction: @type;
+  animation-direction: @type;
+}
+
+/* Perspective (for 3D transforms */
+.perspective (@perspective) {
+  -moz-perspective: @perspective;
+  -ms-perspective: @perspective;
+  -webkit-perspective: @perspective;
+  perspective: @perspective;
+}
+
+/* 3D transform shortcuts */
+.backface-visibility(@visibility: hidden) {
+  -moz-backface-visibility: @visibility;
+  -o-backface-visibility: @visibility;
+  -webkit-backface-visibility: @visibility;
+  backface-visibility: @visibility;
+}
+
+.rotateY(@degree) {
+  -moz-transform: rotateY(@degree);
+  -ms-transform: rotateY(@degree);
+  -o-transform: rotateY(@degree);
+  -webkit-transform: rotateY(@degree);
+  transform: rotateY(@degree);
+}
+
+.rotateX(@degree) {
+  -moz-transform: rotateX(@degree);
+  -ms-transform: rotateX(@degree);
+  -o-transform: rotateX(@degree);
+  -webkit-transform: rotateX(@degree);
+  transform: rotateX(@degree);
+}
+
+.flippable (@duration: .65s, @easing: ease-in-out) {
+  -moz-transition: -moz-transform @duration @easing;
+  -ms-transition: -ms-transform @duration @easing;
+  -o-transition: -o-transform @duration @easing;
+  -webkit-transition: -webkit-transform @duration @easing;
+  transition: -moz-transform @duration @easing,
+              -ms-transform @duration @easing,
+              -o-transform @duration @easing,
+              -webkit-transform @duration @easing,
+              transform @duration @easing;
+
+  -webkit-transform-style: preserve-3d; /* Webkit only */
+
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Color for the placeholder attribute of inputs and textareas */
+.placeholderColor (@color) {
+  ::-webkit-input-placeholder {
+    color: @color;
+  }
+  :-moz-placeholder {
+    color: @color;
+  }
+  ::-moz-placeholder {
+    color: @color;
+  }
+}
+

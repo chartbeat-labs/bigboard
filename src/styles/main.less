@@ -1,0 +1,75 @@
+@import "src/styles/common/normalize.less";
+@import "src/styles/common/animations.less";
+@import "src/styles/common/mixins.less";
+@import "src/styles/variables.less";
+@import "src/styles/header.less";
+@import "src/styles/pages.less";
+@import "src/styles/settings-panel.less";
+
+
+/* Styles */
+* {
+  .border-box();
+
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.page-container,
+.content-container{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, sans-serif;
+  color: @blue-lightest;
+  background-color: @blue;
+}
+
+/* Header */
+
+
+/* Bigboard & Themes */
+.bigboard {
+  height: 100%;
+  width: 100%;
+
+  &.dark-theme{
+    color: @blue-lightest;
+    background-color: @blue;
+
+    .page-numbers-total{
+      color: @blue-lightest;
+    }
+  }
+
+  &.light-theme{
+    background-color: @white;
+    color: @blue-darkest;
+
+    .page-numbers-total{
+      color: @blue-darkest;
+    }
+
+    #settings-panel h3 {
+      text-shadow: none;
+    }
+
+    #settings-panel #dropdowns .dropdown-select,
+    #settings-panel #toggles .toggle,
+    #settings-panel #toggles .toggle:before,
+    #settings-panel #toggles .toggle:after, {
+      color: @blue-darkest;
+      background-color: #9FC5E2;
+    }
+
+    #settings-panel #toggles .toggle label,
+    #settings-panel #toggles .toggle-label {
+      .gradient(@blue-darkest, @blue);
+      color: @blue-lightest;
+    }
+  }
+}
