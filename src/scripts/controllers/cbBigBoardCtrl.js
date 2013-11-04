@@ -254,7 +254,7 @@ angular.module('cbBigBoardCtlr').controller('cbBigBoardCtrl', ['$scope',
         limits[host] += landingPagesCount[host];
       }
       //Force limit from param
-      if (!isNaN(configService.limit)) {
+      if (configService.limit) {
         limits[host] = configService.limit;
       }
     });
