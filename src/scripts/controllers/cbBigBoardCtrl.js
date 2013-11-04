@@ -253,6 +253,10 @@ angular.module('cbBigBoardCtlr').controller('cbBigBoardCtrl', ['$scope',
       if ($scope.hideLandingPages && landingPagesCount[host]) {
         limits[host] += landingPagesCount[host];
       }
+      //Force limit from param
+      if (configService.limit) {
+        limits[host] = configService.limit;
+      }
     });
     firstSort = true;
 
