@@ -1,0 +1,21 @@
+@import "normalize.css";
+@import "auth.less";
+
+@bgColor: #2f4859;
+
+.full-size() {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  .full-size;
+  background: @bgColor;
+}
+
+#bigboard-iframe {
+  .full-size;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Chartbeat-BigBoard",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "~1.2.13",
+    "angular-cookies": "~1.2.10"
+  },
+  "devDependencies": {
+    "less.js": "1.6.3"
+  }
+}

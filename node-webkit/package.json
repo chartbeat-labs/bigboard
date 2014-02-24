@@ -1,0 +1,12 @@
+{
+  "name": "Chartbeat-BigBoard",
+  "main": "./app/index.html",
+  "version": "1.0.0",
+  "window": {
+    "title": "Chartbeat",
+    "toolbar": false,
+    "show": false,
+    "position": "center",
+    "resizable": true
+  }
+}
